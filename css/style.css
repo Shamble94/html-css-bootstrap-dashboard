@@ -80,6 +80,9 @@ button{
 .font-size{
     font-size:15px
 }
+.font-small{
+    font-size: 10px
+}
 .fondosidebar{
     overflow-y: hidden;
 }
@@ -140,8 +143,5 @@ button{
     #content{
         position: relative
     }
-    .pos{
-        position:absolute;
-        top: 30%
-    }
+    
 }
