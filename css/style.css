@@ -8,9 +8,7 @@ body{
 
     font-family: 'Roboto', sans-serif;
 }
-header{
-    height: 70px;
-}
+
 
 .icon{
     background-color: grey;
@@ -26,22 +24,24 @@ header{
 }
 /* ID SIDEBAR */
 #sidebar{
-    width: 150px;
+    width: 120px;
     background-color: #051e34;
     height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url("sidebar-bg.png");
 }
 ul{
     padding: 0;
 }
 #content {
-    width: calc(100vw - 150px);
+    width: calc(100vw - 120px);
     overflow-y: auto;
-    height: 100%
-  }
-  #top{
+   
+    
+}
+#top{
     height:calc(100vh - 70px);
     display: flex
 }
@@ -52,4 +52,17 @@ ul{
 button{
     padding: 5px;
     background-color: none
+}
+.icon-table{
+    color:grey;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-left: 5px;
+   
+}
+.img-class{
+    width: 20px;
+}
+.bg-dark-blu{
+    background-color: darkblue;
 }
