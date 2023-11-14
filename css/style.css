@@ -3,3 +3,53 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    height: 70px;
+}
+
+.icon{
+    background-color: grey;
+    border-radius: 50%;
+    color: white;
+    padding: 5px 8px;
+}
+.bell{
+    color: goldenrod
+}
+.back-grey{
+    background-color: var(--bs-tertiary-bg);
+}
+/* ID SIDEBAR */
+#sidebar{
+    width: 150px;
+    background-color: #051e34;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ul{
+    padding: 0;
+}
+#content {
+    width: calc(100vw - 150px);
+    overflow-y: auto;
+    height: 100%
+  }
+  #top{
+    height:calc(100vh - 70px);
+    display: flex
+}
+.sfondo-blu{
+    background-color: #1b72e8;
+    
+}
+button{
+    padding: 5px;
+    background-color: none
+}
