@@ -36,7 +36,7 @@
                                     <i class="fa-solid fa-bell bell"></i>
                                 </button>
                                 <ul class="dropdown-menu ">
-                                  <li><a class="dropdown-item active" href="#">Profilo</a></li>
+                                  <li><a class="dropdown-item " href="#">Profilo</a></li>
                                   <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                                   <li><a class="dropdown-item" href="#">Logout</a></li>
                                   
@@ -53,9 +53,9 @@
         <div id="sidebar">
             <div class="top justify-content-center  d-flex  text-white  text-center">
                 <ul class="">
-                    <li class="list-group-item "> <i class="fa-solid fa-house  fs-5  m-2"></i><span class="hide">Home</span></li>
-                    <li class="list-group-item "><i class="fa-solid fa-chart-simple fs-5  m-2"></i><span class="hide ">Stats</span></li>
-                    <li class="list-group-item "><i class="fa-solid fa-signal fs-5  m-2"></i><span class="hide">Signals</span></i></li>
+                    <li class="list-group-item "> <i class="fa-solid fa-house  fs-5  m-2"></i><span class="d-none d-lg-inline-block">Home</span></li>
+                    <li class="list-group-item "><i class="fa-solid fa-chart-simple fs-5  m-2"></i><span class="d-none d-lg-inline-block ">Stats</span></li>
+                    <li class="list-group-item "><i class="fa-solid fa-signal fs-5  m-2"></i><span class="d-none d-lg-inline-block">Signals</span></i></li>
                 </ul>
             </div>
             <div class="fondosidebar">
@@ -68,7 +68,7 @@
         <div id="content">
             <div class="sfondo-blu">
                 <div class="row p-2 ">
-                    <div class="col-lg-6 col-md-4 col-sm-12 text-white order-seconda  mb-2" >
+                    <div class="col-lg-6 col-md-4 col-12 text-white order-seconda  mb-2" >
                         <span class="fs-3">Boolean</span>
                         <span class="badge text-bg-info text-white" >Piano blaze</span>
                         <div >
@@ -83,12 +83,12 @@
 
                         </div>
                     </div> 
-                    <div class="col-lg-3 col-md-4 col-sm-12  order-ultima text-white  mb-2">
-                        <div class=" font-size">Studenti online negli ultimi 30 minuti </div>
+                    <div class="col-lg-3 col-md-4 col-12  order-ultima text-white  mb-2">
+                        <div class=" font-small">Studenti online negli ultimi 30 minuti </div>
                         <div class="fs-3">125</div>
                     </div>
                     
-                    <div class="col-lg-3 col-md-4 col-sm-12 order-prima  text-white mb-2 " >
+                    <div class="col-lg-3 col-md-4 col-12 order-prima  text-white mb-2 " >
                         <div>
                             <span>Nuovo studente <button class="btn btn-primary border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                 +
@@ -181,7 +181,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="card my-2">
+                    <div class="card my-3">
                         <div class="card-header ">
                         F.A.Q
                         </div>
@@ -193,7 +193,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body"> Clicca sul "+" nella sezione blu.*</div>
+                                <div class="accordion-body font-small"> Clicca sul "+" nella sezione blu.*</div>
                             </div>
                             </div>
                             <div class="accordion-item">
@@ -203,7 +203,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Clicca sulla campanella nell'header</div>
+                                <div class="accordion-body font-small">Clicca sulla campanella nell'header</div>
                             </div>
                             </div>
                             <div class="accordion-item">
@@ -213,7 +213,7 @@
                                 </button> 
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body"> Assolutamente si! Se riesco a far funzionare le query ovviamente</div>
+                                <div class="accordion-body font-small"> Assolutamente si! Se riesco a far funzionare le query ovviamente</div>
                             </div>
                             </div>
                         </div>
@@ -266,25 +266,87 @@
 
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div>
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-      </div>
-      <div class="dropdown mt-3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-    </div>
+    
+    
+        <div class="offcanvas-body">
+            <form action="">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                        <div class="col-6">
+                            <label for="name" class="my-2">Nome</label>
+                            <input type="text "  class="form-control" id="name" >
+                            <label for="email" class="my-2">Email</label>
+                            <div class="input-group ">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" id="email" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <label for="email-2" class="my-2">Indirizzo email</label>
+                            <div class="input-group ">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" id="email-2" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                              
+                        </div>
+                        <div class="col-6">
+                            <label for="surname" class="my-2">Cognome</label>
+                            <input type="text"  class="form-control"  id="surname" >
+                            <label for="password" class="my-2"> Password</label>
+                            <input type="password" class="form-control" id="password">
+                            <label for="password-1" class="my-2"> Password</label>
+                            <input type="password" class="form-control" id="password-1">
+                        </div>
+                        <div class="col-12">
+                            <label for="indirizzo" class="my-2">Indirizzo</label>
+                            <input type="text"  class="form-control"  id="indirizzo">
+                        </div>
+                        <div class="col-7">
+                            <label for="citta" class="my-2">Citt&aacute;</label>
+                            <input type="text"  class="form-control"  id="citta" >
+                        </div>
+                        <div class="col-3">
+                            <label for="stato" class="my-2">Stato</label>
+                            <select class="form-select" id="stato">
+                                <option selected>Scegli...</option>
+                                <option value="1">Pippo</option>
+                                <option value="2">Topolino</option>
+                                <option value="3">Minnie</option>
+                              </select>
+                            
+                        </div>
+                        <div class="col-2">
+                            <label for="cap" class="my-2">CAP</label>
+                            <input type="text"  class="form-control"  id="cap" >
+                        </div>
+                        <div class="col-12">
+                            <label for="file" class="my-2">Foto</label>
+                            <div class="input-group ">
+                                <input type="file" class="form-control" id="file">  
+                            </div>
+                        </div>
+                        <div class="col-12 my-3">
+                            <input type="checkbox"> Seleziona per proseguire
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <button class="btn btn-primary text-white" type="submit">Salva</button>
+                        <button class="btn btn-warning" type="submit">Svuota</button>
+
+                    </div>
+                </div>    
+            </form>
+        </div>
+
+            
+                    
+        </div>
+            
+        </div>
+    
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

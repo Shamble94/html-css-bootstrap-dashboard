@@ -88,9 +88,7 @@ button{
 }
 
 @media screen and (max-width: 575px){
-    .hide{
-        display:none
-    }
+    
     .order-prima{
         order: 0
     }
@@ -109,14 +107,11 @@ button{
     #content {
         width: calc(100vw - 70px);
     }
-
+  
 }
 @media screen and (min-width: 576px) and (max-width: 990px){
     
 
-    .hide{
-        display: none
-    }
     #sidebar{
         width: 70px;
     }
@@ -132,16 +127,6 @@ button{
     .to-do-do{
         order: 2
     }
-    .show{
-        display:block;
-        display: flex;
-        display: inline-block
-    
+   
 }
-}
-@media screen and (min-width: 991px) {
-    #content{
-        position: relative
-    }
-    
 }
