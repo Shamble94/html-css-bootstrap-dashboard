@@ -8,7 +8,9 @@ body{
 
     font-family: 'Roboto', sans-serif;
 }
-
+header{
+    height: 50px
+}
 
 .icon{
     background-color: grey;
@@ -26,11 +28,12 @@ body{
 #sidebar{
     width: 120px;
     background-color: #051e34;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("sidebar-bg.png");
+    background-image: url("./img/sidebar-bg.png");
+    overflow-y: auto
 }
 ul{
     padding: 0;
@@ -38,12 +41,11 @@ ul{
 #content {
     width: calc(100vw - 120px);
     overflow-y: auto;
-   
-    
 }
 #top{
     height:calc(100vh - 70px);
-    display: flex
+    display: flex;
+    width:100%
 }
 .sfondo-blu{
     background-color: #1b72e8;
@@ -65,4 +67,81 @@ button{
 }
 .bg-dark-blu{
     background-color: darkblue;
+}
+.hide{
+    
+}
+.logo-mobile{
+    width: 40px;
+}
+.logo-lg{
+    width: 100%
+}
+.font-size{
+    font-size:15px
+}
+.fondosidebar{
+    overflow-y: hidden;
+}
+
+@media screen and (max-width: 575px){
+    .hide{
+        display:none
+    }
+    .order-prima{
+        order: 0
+    }
+    .order-seconda{
+        order:1
+    }
+    .order-ultima{
+        order: 2
+    }
+    .text-center{
+       text-align: center;
+    }
+    #sidebar{
+        width: 70px;
+    }
+    #content {
+        width: calc(100vw - 70px);
+    }
+
+}
+@media screen and (min-width: 576px) and (max-width: 990px){
+    
+
+    .hide{
+        display: none
+    }
+    #sidebar{
+        width: 70px;
+    }
+    #content {
+        width: calc(100vw - 70px);
+    }
+    .to-do{
+        order: 1
+    }
+    .f-a-q{
+        order: 0
+    }
+    .to-do-do{
+        order: 2
+    }
+    .show{
+        display:block;
+        display: flex;
+        display: inline-block
+    
+}
+}
+@media screen and (min-width: 991px) {
+    #content{
+        position: relative
+    }
+    .pos{
+        position:absolute;
+        top: 30%
+    }
 }
