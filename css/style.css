@@ -74,8 +74,8 @@ button{
 .logo-mobile{
     width: 40px;
 }
-.logo-lg{
-    width: 100%
+.logo{
+   width:100%
 }
 .font-size{
     font-size:15px
@@ -85,6 +85,9 @@ button{
 }
 .fondosidebar{
     overflow-y: hidden;
+}
+.canvas-width{
+    width:576px
 }
 
 @media screen and (max-width: 575px){
@@ -129,4 +132,4 @@ button{
     }
    
 }
-}
+
