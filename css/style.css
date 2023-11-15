@@ -165,14 +165,8 @@ li:hover {
     #content {
         width: calc(100vw - 70px);
     }
-    .to-do{
+    .ordine-1{
         order: 1
-    }
-    .f-a-q{
-        order: 0
-    }
-    .to-do-do{
-        order: 2
     }
     .offcanvas{
         width: 991px !important;
