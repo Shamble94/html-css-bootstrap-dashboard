@@ -9,7 +9,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 header{
-    height: 50px
+    height: 50px;
 }
 
 .icon{
@@ -32,7 +32,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("./img/sidebar-bg.png");
+    background-image: url("sidebar-bg.png");
     overflow-y: auto
 }
 ul{
@@ -43,9 +43,10 @@ ul{
     overflow-y: auto;
 }
 #top{
-    height:calc(100vh - 70px);
+    height:calc(100vh - 50px);
     display: flex;
-    width:100%
+    width:100%;
+    overflow-y: auto
 }
 .sfondo-blu{
     background-color: #1b72e8;
@@ -68,14 +69,12 @@ button{
 .bg-dark-blu{
     background-color: darkblue;
 }
-.hide{
-    
-}
+
 .logo-mobile{
     width: 40px;
 }
 .logo{
-   width:100%
+   width:80px
 }
 .font-15{
     font-size:15px
@@ -90,12 +89,18 @@ button{
 .riga-lunga{
     width: 40%;
 }
-.canvas-width{
-    width:576px
-}
+
 .offcanvas{
     width: 576px !important;
 }
+li:hover {
+    background-color: rgba(255,255,255,0.4);
+   
+}
+.text-bg-info{
+    background-color: #165bba !important;
+}
+
 @media screen and (max-width: 575px){
     
     .order-prima{
@@ -118,7 +123,7 @@ button{
     }
   
 }
-@media screen and (min-width: 576px) and (max-width: 990px){
+@media screen and (min-width: 576px) and (max-width: 991px){
     
 
     #sidebar{
@@ -135,6 +140,9 @@ button{
     }
     .to-do-do{
         order: 2
+    }
+    .offcanvas{
+        width: 991px !important;
     }
    
 }

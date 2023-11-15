@@ -19,18 +19,18 @@
                     <img src="./img/logo.svg"  class="logo d-none d-lg-block mt-2" alt="">
                     <img src="./img/mobile-logo.png" class="logo-mobile d-block d-lg-none" alt="">
                 </div>
-                <div class="col-9">
+                <div class="col-9 ">
                     <div class="input-group">
                         <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="text" class="form-control border-start-0 back-grey" placeholder="Prova a cercare: Laravel" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
-                <div class="col-2 mt-1 font-15">
+                <div class="col-2  mt-1 font-15">
                     <ul class="d-flex gap-4 justify-content-end">
                         <li class="list-group-item d-none d-lg-block"> <i class="fa-solid fa-list-ul "></i></i></li>
                         <li class="list-group-item d-none d-lg-block "><i class="fa-solid fa-question icon"></i></li>
                         <li class="list-group-item d-none d-lg-block"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                        <li class="list-group-item"> <div class="dropdown">
+                        <li class="list-group-item"> 
                             <div class="dropdown">
                                 <button class="btn p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-bell bell"></i>
@@ -38,9 +38,7 @@
                                 <ul class="dropdown-menu ">
                                   <li><a class="dropdown-item " href="#">Profilo</a></li>
                                   <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                                  
-                                  
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>                                                               
                                 </ul>
                             </div>
                     </ul>
@@ -58,10 +56,9 @@
                     <li class="list-group-item "><i class="fa-solid fa-signal fs-5  m-2"></i><span class="d-none d-lg-inline-block">Signals</span></i></li>
                 </ul>
             </div>
-            <div class="fondosidebar">
-                <div class=" text-white d-flex flex-column  text-center ">
-                    <div class="m-3 " ><i class="fa-solid fa-gear"></i><span class="mx-2 hide d-none d-lg-inline-block">Admin</span></div>
-                </div>
+            <div class="fondosidebar text-white d-flex justify-content-center ">
+                    <div class="m-3"><i class="fa-solid fa-gear"></i><span class="mx-2 hide d-none d-lg-inline-block">Admin</span></div>
+                
             </div>
         </div>
    
@@ -70,7 +67,7 @@
                 <div class="row p-2 ">
                     <div class="col-lg-6 col-md-4 col-12 text-white order-seconda  mb-2" >
                         <span class="fs-3">Boolean</span>
-                        <span class="badge text-bg-info text-white" >Piano blaze</span>
+                        <span class="badge  text-bg-info text-white" >Piano blaze</span>
                         <div >
                             <span class="  badge text-bg-info text-white ">3 app</span>
                             <span><i class="fa-solid fa-angles-right text-white"></i></span>
@@ -106,7 +103,7 @@
                         <div class="card-header py-3 px-2 fw-bold ">
                         Prossime classi
                         </div>
-                        <table class="table font-small">
+                        <table class="table  table-hover font-small">
                             <thead>
                             <tr>
                                 <th class="riga-lunga" scope="col">Nome</th>
@@ -219,44 +216,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 to-do p-2">
+                <div class="col-lg-4 col-md-12 col-sm-12 to-do">
                     <div class="card">
                         <div class="card-header">
                         Todo
                         </div>
-                            
-                        <ul class="list-group list-group-flush font-small">
-                            <li class="list-group-item"><input type="checkbox"> Kickoff nuove classi</li>
-                            <li class="list-group-item"><input type="checkbox"> Lezione su Bootstrap 5 in classe #75</li>
-                            <li class="list-group-item"><input type="checkbox"> Controllare username github studenti</li>
-                            
+                        <div class="card m-2">
+                            <ul class="list-group list-group-flush font-small">
+                                <li class="list-group-item"><input type="checkbox"> Kickoff nuove classi</li>
+                                <li class="list-group-item"><input type="checkbox"> Lezione su Bootstrap 5 in classe #75</li>
+                                <li class="list-group-item"><input type="checkbox"> Controllare username github studenti</li>
+                                
                         
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
                     <div class="card my-3">
-                            
-                        <ul class="list-group list-group-flush ">
-                        <li class="list-group-item"> <img src="./img/stats.jpeg"  class="img-fluid"alt="stats">
-                        <h5>Utenti attivi</h5> 
-                        <span class="font-small">
-                            Lista degli utenti attivi in piattaforma nell'ultimo mese
-                        </span></li>
-                        <li class="list-group-item font-15"> Gennaio: 1200</li>
-                        <li class="list-group-item font-15"> Febbraio: 800</li>
-                        <li class="list-group-item font-15"> Marzo: 1500</li>
-                        <li class="list-group-item font-15"> <a href="">Visualizza report approfondito</a></li>
-                        </ul>
+                        <div class="card m-2">
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item"> <img src="./img/stats.jpeg"  class="img-fluid"alt="stats">
+                                <h5>Utenti attivi</h5> 
+                                <span class="font-small">
+                                    Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                </span></li>
+                                <li class="list-group-item font-15"> Gennaio: 1200</li>
+                                <li class="list-group-item font-15"> Febbraio: 800</li>
+                                <li class="list-group-item font-15"> Marzo: 1500</li>
+                                <li class="list-group-item font-15"> <a href="">Visualizza report approfondito</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            
-                
-                
-                    <div class="col-lg-8 col-sm-12 f-a-q p-2">
-                        
-                    </div>
-                    <div class="col-lg-4 col-sm-12  to-do-do p-2">
-                       
-                    </div>
             </div>
         </div>
 
