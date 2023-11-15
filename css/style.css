@@ -6,7 +6,6 @@
 
 /* BODY */
 body{
-
     font-family: 'Roboto', sans-serif;
 }
 
@@ -35,6 +34,7 @@ header{
 .bell{
     color: goldenrod
 }
+
 .back-grey{
     background-color: var(--bs-tertiary-bg);
 }
@@ -131,21 +131,20 @@ li:hover {
 .trash:hover{
     color:red;
 }
+
 .pencil:hover{
     color:blue
 }
+
 /* MEDIA QUERY MOBILE */
 @media screen and (max-width: 575px){
-    .text-center{
-       text-align: center;
-    }
+    
     #sidebar{
         width: 70px;
     }
     #content {
         width: calc(100vw - 70px);
     }
-  
 }
 
 /* MEDIA QUERY TABLET */
@@ -160,7 +159,6 @@ li:hover {
     }
     .offcanvas{
         width: 991px !important;
-    }
-   
+    } 
 }
 
