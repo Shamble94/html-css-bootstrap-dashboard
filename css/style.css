@@ -89,7 +89,9 @@ button{
 .canvas-width{
     width:576px
 }
-
+.offcanvas{
+    width: 576px !important;
+}
 @media screen and (max-width: 575px){
     
     .order-prima{
