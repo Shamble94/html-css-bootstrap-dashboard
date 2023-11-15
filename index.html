@@ -7,30 +7,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <!-- HEADER -->
    <header>
+        <!-- CONTAINER -->
         <div class="container-fluid">
+            <!-- ROW -->
             <div class="row mt-2 ">
+
+                <!-- COLONNA-1 -->
                 <div class="col-1">
                     <img src="./img/logo.svg"  class="logo d-none d-lg-block mt-2" alt="">
                     <img src="./img/mobile-logo.png" class="logo-mobile d-block d-lg-none" alt="">
                 </div>
+
+                <!-- COLONNA-9 -->
                 <div class="col-9 ">
                     <div class="input-group">
-                        <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" class="form-control border-start-0 back-grey" placeholder="Prova a cercare: Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                        <span class="input-group-text " id="basic-addon3"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control border-start-0 back-grey" placeholder="Prova a cercare: Laravel" aria-label="Username" aria-describedby="basic-addon3">
                     </div>
                 </div>
+
+                <!-- COLONNA-2 -->
                 <div class="col-2  mt-1 font-15">
+                    <!-- LISTA -->
                     <ul class="d-flex gap-4 justify-content-end">
-                        <li class="list-group-item d-none d-lg-block"> <i class="fa-solid fa-list-ul "></i></i></li>
+                        <li class="list-group-item d-none d-lg-block"> <i class="fa-solid fa-list-ul "></i></li>
                         <li class="list-group-item d-none d-lg-block "><i class="fa-solid fa-question icon"></i></li>
                         <li class="list-group-item d-none d-lg-block"><i class="fa-solid fa-ellipsis-vertical"></i></li>
                         <li class="list-group-item"> 
+                            <!-- CAMPANELLA CON MENU DROPDOWN -->
                             <div class="dropdown">
                                 <button class="btn p-0 text-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-bell bell"></i>
@@ -47,67 +58,78 @@
         </div>
    </header>  
 
+   <!-- TOP -->
    <div id="top"> 
+        <!-- SIDEBAR -->
         <div id="sidebar">
             <div class="top justify-content-center  d-flex  text-white  text-center mt-3">
-                <ul class="">
+                <!-- LISTA -->
+                <ul>
                     <li class="list-group-item "> <i class="fa-solid fa-house  fs-5  m-2"></i><span class="d-none d-lg-inline-block">Home</span></li>
                     <li class="list-group-item "><i class="fa-solid fa-chart-simple fs-5  m-2"></i><span class="d-none d-lg-inline-block ">Stats</span></li>
-                    <li class="list-group-item "><i class="fa-solid fa-signal fs-5  m-2"></i><span class="d-none d-lg-inline-block">Signals</span></i></li>
+                    <li class="list-group-item "><i class="fa-solid fa-signal fs-5  m-2"></i><span class="d-none d-lg-inline-block">Signals</span></li>
                 </ul>
             </div>
+            <!-- FONDO DELLA SIDEBAR -->
             <div class="fondosidebar text-white d-flex justify-content-center ">
-                    <div class="m-3"><i class="fa-solid fa-gear"></i><span class="mx-2 hide d-none d-lg-inline-block">Admin</span></div>
-                
+                <div class="m-3"><i class="fa-solid fa-gear"></i><span class="mx-2 hide d-none d-lg-inline-block">Admin</span></div>
+                    
             </div>
         </div>
    
+        <!-- CONTENT -->
         <div id="content">
+            <!-- COLORE SFONDO SEZIONE -->
             <div class="sfondo-blu">
+                <!-- CONTAINER -->
               <div class="container-fluid">
-                
+                    <!-- RIGA -->
                     <div class="row p-2 ">
+                        <!-- COLONNA VARIABILE -->
                         <div class="col-lg-6 col-md-4 col-12 text-white order-seconda  mb-2" >
                             <span class="fs-3">Boolean</span>
                             <span class="badge  text-bg-info text-white" >Piano blaze</span>
-                            <div >
+                            <!-- BADGE -->
+                            <div>
                                 <span class="  badge text-bg-info text-white ">3 app</span>
                                 <span><i class="fa-solid fa-angles-right text-white"></i></span>
                                 <span class="badge text-bg-info text-white  d-lg-none d-sm-inline-block ">+</span>
-                            
+                                <!-- BADGE NASCOSTI -->
                                 <span class="badge text-bg-info text-white  d-none d-lg-inline-block ">Boolean mobile app</span>
                                 <span class="badge text-bg-info text-white  d-none d-lg-inline-block ">Boolean web app</span>
                                 <span class="badge text-bg-info text-white  d-none d-lg-inline-block ">Boolean blog app</span>
-                            
-
                             </div>
                         </div> 
+                        
+                        <!-- COLONNA VARIABILE -->
                         <div class="col-lg-3 col-md-4 col-12  order-ultima text-white  mb-2">
                             <div class=" font-small">Studenti online negli ultimi 30 minuti </div>
                             <div class="fs-3">125</div>
                         </div>
-                        
+                        <!-- COLOJNNA VARIABILE -->
                         <div class="col-lg-3 col-md-4 col-12 order-prima  text-white mb-2 " >
                             <div>
-                                <span>Nuovo studente <button class="btn btn-primary border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                    +
-                                </button>
-                                </span>
-                            </div>
-                            
+                                <span>Nuovo studente <button class="btn btn-primary border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"> + </button</span>                                                                    
+                            </div> 
                         </div>
-
                     </div>
                 </div>
             </div>
+            <!-- CONTAINER FLUID -->
             <div class="container-fluid">
+                <!-- ROW -->
                 <div class="row p-2">
+                    <!-- COLONNA VARIABILE -->
                     <div class="col-lg-8 col-md-12 col-sm-12 p-2">
+                        <!-- CARD -->
                         <div class="card" >
+                            <!-- CARD HEADER -->
                             <div class="card-header py-3 px-2 fw-bold ">
-                            Prossime classi
+                                Prossime classi
                             </div>
+                            <!-- TABELLA -->
                             <table class="table  table-hover font-small">
+                                <!-- HEAD TABELLA -->
                                 <thead>
                                 <tr>
                                     <th class="riga-lunga" scope="col">Nome</th>
@@ -117,132 +139,156 @@
                                     <th scope="col" class="text-center">Azioni</th>
                                 </tr>
                                 </thead>
+                                <!-- BODY TABELLA -->
                                 <tbody>
-                                <tr > 
-                                    <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 75</td>
-                                    <td class=" text-center d-none d-sm-table-cell ">15 febbraio 2021</td>
-                                    <td class=" text-center d-none d-sm-table-cell">20 &percnt;</td>
-                                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                    <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 76</td>
-                                    <td class="text-center  d-none d-sm-table-cell">16 febbraio 2021</td>
-                                    <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
-                                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                    <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 77</td>
-                                    <td class="text-center  d-none d-sm-table-cell">17 febbraio 2021</td>
-                                    <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
-                                    <td class="text-center"><span class="badge text-bg-warning text-white">Warning</span>
-                                    </td>
-                                    <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 78</td>
-                                    <td class="text-center  d-none d-sm-table-cell">18 febbraio 2021</td>
-                                    <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
-                                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                    <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 79</td>
-                                    <td class="text-center  d-none d-sm-table-cell">19 febbraio 2021</td>
-                                    <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
-                                    <td class="text-center"><span class="badge text-bg-danger">Failed</span>
-                                    </td>
-                                    <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 80</td>
-                                    <td class="text-center  d-none d-sm-table-cell">20 febbraio 2021</td>
-                                    <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
-                                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                    <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 81</td>
-                                    <td class="text-center  d-none d-sm-table-cell">21 febbraio 2021</td>
-                                    <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
-                                    <td class="text-center"><span class="badge text-bg-danger">Failed</span>
-                                    </td>
-                                    <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 82</td>
-                                    <td class="text-center  d-none d-sm-table-cell">22 febbraio 2021</td>
-                                    <td class="text-center  d-none d-sm-table-cell" >20 &percnt;</td>
-                                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                    <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
-                                </tr>
-                                
-                                
+                                    <tr > 
+                                        <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 75</td>
+                                        <td class=" text-center d-none d-sm-table-cell ">15 febbraio 2021</td>
+                                        <td class=" text-center d-none d-sm-table-cell">20 &percnt;</td>
+                                        <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                        <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 76</td>
+                                        <td class="text-center  d-none d-sm-table-cell">16 febbraio 2021</td>
+                                        <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
+                                        <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                        <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 77</td>
+                                        <td class="text-center  d-none d-sm-table-cell">17 febbraio 2021</td>
+                                        <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
+                                        <td class="text-center"><span class="badge text-bg-warning text-white">Warning</span>
+                                        </td>
+                                        <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 78</td>
+                                        <td class="text-center  d-none d-sm-table-cell">18 febbraio 2021</td>
+                                        <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
+                                        <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                        <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 79</td>
+                                        <td class="text-center  d-none d-sm-table-cell">19 febbraio 2021</td>
+                                        <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
+                                        <td class="text-center"><span class="badge text-bg-danger">Failed</span>
+                                        </td>
+                                        <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 80</td>
+                                        <td class="text-center  d-none d-sm-table-cell">20 febbraio 2021</td>
+                                        <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
+                                        <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                        <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 81</td>
+                                        <td class="text-center  d-none d-sm-table-cell">21 febbraio 2021</td>
+                                        <td class="text-center  d-none d-sm-table-cell">20 &percnt;</td>
+                                        <td class="text-center"><span class="badge text-bg-danger">Failed</span>
+                                        </td>
+                                        <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="riga-lunga" ><img src="./img/class-avatar.jpg" class="img-class" alt=""> Classe 82</td>
+                                        <td class="text-center  d-none d-sm-table-cell">22 febbraio 2021</td>
+                                        <td class="text-center  d-none d-sm-table-cell" >20 &percnt;</td>
+                                        <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                        <td class="text-center"><i class="fa-solid fa-pencil icon-table"></i><i class="fa-solid fa-trash icon-table"></i></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
+
+                        <!-- CARD -->
                         <div class="card my-3">
+                            <!-- HEAD CARD -->
                             <div class="card-header ">
                             F.A.Q
                             </div>
+                            <!-- ACCORDION-FLUSH -->
                             <div class="accordion accordion-flush " id="accordionFlushExample">
+                                <!-- ACCORDION -->
                                 <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed font-small" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Come aggiungere un nuovo studente?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body font-small"> Clicca sul "+" nella sezione blu.*</div>
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed font-small" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Come aggiungere un nuovo studente?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body font-small"> Clicca sul "+" nella sezione blu.*</div>
+                                    </div>                              
                                 </div>
-                                </div>
+                                <!-- ACCORDION -->
                                 <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed font-small" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                    Come posso accedere alle informazioni del mio account?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body font-small">Clicca sulla campanella nell'header</div>
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed font-small" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body font-small">Clicca sulla campanella nell'header</div>
+                                    </div>
                                 </div>
-                                </div>
+                                <!-- ACCORDION -->
                                 <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed font-small" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                    Posso usare questa dashboard da mobile?
-                                    </button> 
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body font-small"> Assolutamente si! Se riesco a far funzionare le query ovviamente</div>
-                                </div>
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed font-small" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                        </button> 
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body font-small"> Assolutamente si! Se riesco a far funzionare le query ovviamente</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- COLONNA VARIABILE -->
                     <div class="col-lg-4 col-md-12 col-sm-12 to-do">
+                        <!-- CARD -->
                         <div class="card">
+                            <!-- HEAD CARD -->
                             <div class="card-header">
                             Todo
                             </div>
+                            <!-- CARD  -->
                             <div class="card m-2">
+                                <!-- LISTA -->
                                 <ul class="list-group list-group-flush font-small">
                                     <li class="list-group-item"><input type="checkbox"> Kickoff nuove classi</li>
                                     <li class="list-group-item"><input type="checkbox"> Lezione su Bootstrap 5 in classe #75</li>
                                     <li class="list-group-item"><input type="checkbox"> Controllare username github studenti</li>
-                                    
-                            
                                 </ul>
                             </div>
                         </div>
+
+                        <!-- CARD -->
                         <div class="card my-3">
+                            <!-- CARD INTERNA -->
                             <div class="card m-2">
+                                <!-- LISTA -->
                                 <ul class="list-group list-group-flush ">
-                                    <li class="list-group-item"> <img src="./img/stats.jpeg"  class="img-fluid"alt="stats">
-                                    <h5>Utenti attivi</h5> 
-                                    <span class="font-small">
-                                        Lista degli utenti attivi in piattaforma nell'ultimo mese
-                                    </span></li>
+                                    <!-- LISTA -->
+                                    <!-- IMAGE -->
+                                    <li class="list-group-item"> <img src="./img/stats.jpeg"  class="img-fluid" alt="stats">
+                                        <h5>Utenti attivi</h5> 
+                                        <span class="font-small">
+                                            Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                        </span>
+                                    </li>
                                     <li class="list-group-item font-15"> Gennaio: 1200</li>
                                     <li class="list-group-item font-15"> Febbraio: 800</li>
                                     <li class="list-group-item font-15"> Marzo: 1500</li>
@@ -253,79 +299,115 @@
                     </div>
                 </div>
             </div>
-
-    </div>
-
+        </div>
 
 
 
+<!-- OFFCANVAS -->
 <div class="offcanvas offcanvas-end  " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    
-    
         <div class="offcanvas-body">
-            <form action="" class="canvas-width">
+            <!-- FORM -->
+            <form action="#" class="canvas-width">
+                <!-- CONTAINER -->
                 <div class="container-fluid">
+                    <!-- ROW -->
                     <div class="row">
+                        <!-- OFFCANVAS HEADER -->
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                           </div>
+                          <!-- COLONNA -->
                         <div class="col-6">
+                            <!-- LABEL -->
                             <label for="name" class="my-2">Nome</label>
-                            <input type="text "  class="form-control" id="name" >
+                            <!-- INPUT NAME -->
+                            <input type="text"  class="form-control" id="name" >
+                            <!-- LABEL -->
                             <label for="email" class="my-2">Email</label>
+                            <!-- INPUT EMAIL -->
                             <div class="input-group ">
                                 <span class="input-group-text" id="basic-addon1">@</span>
                                 <input type="text" class="form-control" id="email" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
+                            <!-- LABEL -->
                             <label for="email-2" class="my-2">Indirizzo email</label>
+                            <!-- INPUT EMAIL -->
                             <div class="input-group ">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                                <input type="text" class="form-control" id="email-2" aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                              
+                                <span class="input-group-text" id="basic-addon2">@</span>
+                                <input type="text" class="form-control" id="email-2" aria-label="Username" aria-describedby="basic-addon2">
+                            </div>  
                         </div>
+                        <!-- COLONNA -->
                         <div class="col-6">
+                            <!-- LABEL -->
                             <label for="surname" class="my-2">Cognome</label>
+                            <!-- INPUT SURNAME -->
                             <input type="text"  class="form-control"  id="surname" >
+                            <!-- LABEL -->
                             <label for="password" class="my-2"> Password</label>
+                            <!-- INPUT PASSWORD -->
                             <input type="password" class="form-control" id="password">
+                            <!-- LABEL -->
                             <label for="password-1" class="my-2"> Password</label>
+                            <!-- INPUT PASSWORD -->
                             <input type="password" class="form-control" id="password-1">
                         </div>
+
+                        <!-- COLONNA -->
                         <div class="col-12">
+                            <!-- LABEL -->
                             <label for="indirizzo" class="my-2">Indirizzo</label>
+                            <!-- INPUT INDIRIZZO -->
                             <input type="text"  class="form-control"  id="indirizzo">
                         </div>
+
+                        <!-- COLONNA -->
                         <div class="col-7">
+                            <!-- LABEL -->
                             <label for="citta" class="my-2">Citt&aacute;</label>
+                            <!-- INPUT CITTA -->
                             <input type="text"  class="form-control"  id="citta" >
                         </div>
+
+                        <!-- COLONNA -->
                         <div class="col-3">
+                            <!-- LABEL -->
                             <label for="stato" class="my-2">Stato</label>
+                            <!-- LISTA SELECT -->
                             <select class="form-select" id="stato">
                                 <option selected>Scegli...</option>
                                 <option value="1">Pippo</option>
                                 <option value="2">Topolino</option>
                                 <option value="3">Minnie</option>
                               </select>
-                            
                         </div>
+
+                        <!-- COLONNA -->
                         <div class="col-2">
+                            <!-- LABEL -->
                             <label for="cap" class="my-2">CAP</label>
+                            <!-- INPUT CAP -->
                             <input type="text"  class="form-control"  id="cap" >
                         </div>
+
+                        <!-- COLONNA -->
                         <div class="col-12">
+                            <!-- LABEL -->
                             <label for="file" class="my-2">Foto</label>
+                            <!-- INPUT GROUP -->
                             <div class="input-group ">
                                 <input type="file" class="form-control" id="file">  
                             </div>
                         </div>
+
+                        <!-- COLONNA -->
                         <div class="col-12 my-3">
+                            <!-- INPUT CHECKBOX -->
                             <input type="checkbox"> Seleziona per proseguire
                         </div>
                     </div>
-
+                    <!-- BOTTONI FONDO CANVAS -->
                     <div class="mt-3">
                         <button class="btn btn-primary text-white" type="submit">Salva</button>
                         <button class="btn btn-warning" type="submit">Svuota</button>
@@ -341,7 +423,8 @@
             
         </div>
     
-  </div>
+ 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </html>
