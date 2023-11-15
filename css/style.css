@@ -106,9 +106,7 @@ button{
 .font-15{
     font-size:15px
 }
-.font-small{
-    font-size: 10px
-}
+
 
 /* DIMENSIONE PRIMA RIGA DELLA COLONNA */
 .riga-lunga{
@@ -130,19 +128,14 @@ li:hover {
     background-color: #165bba !important;
 }
 
-
+.trash:hover{
+    color:red;
+}
+.pencil:hover{
+    color:blue
+}
 /* MEDIA QUERY MOBILE */
 @media screen and (max-width: 575px){
-    
-    .order-prima{
-        order: 0
-    }
-    .order-seconda{
-        order:1
-    }
-    .order-ultima{
-        order: 2
-    }
     .text-center{
        text-align: center;
     }
@@ -164,9 +157,6 @@ li:hover {
     }
     #content {
         width: calc(100vw - 70px);
-    }
-    .ordine-1{
-        order: 1
     }
     .offcanvas{
         width: 991px !important;
