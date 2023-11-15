@@ -4,26 +4,41 @@
     box-sizing: border-box;
 }
 
+/* BODY */
 body{
 
     font-family: 'Roboto', sans-serif;
 }
+
+/* HEADER */
 header{
     height: 50px;
 }
 
+/* STILE ICON */
 .icon{
     background-color: grey;
     border-radius: 50%;
     color: white;
     padding: 5px 8px;
 }
+
+/* STILE ICON NELLA TABELLA */
+.icon-table{
+    color:grey;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-left: 5px;  
+}
+
+/* COLORE CAMPANELLA */
 .bell{
     color: goldenrod
 }
 .back-grey{
     background-color: var(--bs-tertiary-bg);
 }
+
 /* ID SIDEBAR */
 #sidebar{
     width: 120px;
@@ -35,39 +50,49 @@ header{
     background-image: url("../img/sidebar-bg.png");
     overflow-y: auto
 }
+
+.fondosidebar{
+    overflow-y: hidden;
+    width: 100%;
+}
+
+/* STILE UL */
 ul{
     padding: 0;
 }
+
+/* SEZIONE CONTENT */
 #content {
     width: calc(100vw - 120px);
     overflow-y: auto;
 }
+
+/* SEZIONE TOP */
 #top{
     height:calc(100vh - 50px);
     display: flex;
     width:100%;
     overflow-y: auto
 }
+
+/* COLORE SFONDO */
 .sfondo-blu{
-    background-color: #1b72e8;
-    
+    background-color: #1b72e8; 
 }
+
+.bg-dark-blu{
+    background-color: darkblue;
+}
+
+/* BOTTONE */
 button{
     padding: 5px;
     background-color: none
 }
-.icon-table{
-    color:grey;
-    border: 1px solid grey;
-    padding: 5px;
-    margin-left: 5px;
-   
-}
+
+/* DIMENSIONE IMMAGINE  */
 .img-class{
     width: 20px;
-}
-.bg-dark-blu{
-    background-color: darkblue;
 }
 
 .logo-mobile{
@@ -76,31 +101,37 @@ button{
 .logo{
    width:80px
 }
+
+/* DIMENSIONE FONT */
 .font-15{
     font-size:15px
 }
 .font-small{
     font-size: 10px
 }
-.fondosidebar{
-    overflow-y: hidden;
-    width: 100%;
-}
+
+/* DIMENSIONE PRIMA RIGA DELLA COLONNA */
 .riga-lunga{
     width: 40%;
 }
 
+/* DIMENSIONE OFFCANVAS */
 .offcanvas{
     width: 576px !important;
 }
+
+/* EFFETTO HOVER LISTA */
 li:hover {
-    background-color: rgba(255,255,255,0.4);
-   
+    background-color: rgba(255,255,255,0.4); 
 }
+
+/* COLORE BADGE */
 .text-bg-info{
     background-color: #165bba !important;
 }
 
+
+/* MEDIA QUERY MOBILE */
 @media screen and (max-width: 575px){
     
     .order-prima{
@@ -123,6 +154,8 @@ li:hover {
     }
   
 }
+
+/* MEDIA QUERY TABLET */
 @media screen and (min-width: 576px) and (max-width: 991px){
     
 
